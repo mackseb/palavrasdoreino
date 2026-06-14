@@ -220,6 +220,29 @@
                                     ></span></sc-if
                             ></span>
                             <span
+                                onClick="{{ goMaterial }}"
+                                style="
+                                    position: relative;
+                                    cursor: pointer;
+                                    padding: 4px 0;
+                                "
+                                style-hover="color:#241D33;"
+                                >Material<sc-if
+                                    value="{{ isMaterial }}"
+                                    hint-placeholder-val="{{ false }}"
+                                    ><span
+                                        style="
+                                            position: absolute;
+                                            left: 0;
+                                            right: 0;
+                                            bottom: -2px;
+                                            height: 2px;
+                                            background: #e5a93c;
+                                            border-radius: 2px;
+                                        "
+                                    ></span></sc-if
+                            ></span>
+                            <span
                                 onClick="{{ goContact }}"
                                 style="
                                     background: #6b4fa0;
@@ -3108,6 +3131,1456 @@
                     </div>
                 </sc-if>
 
+                <!-- ============ MATERIAL ============ -->
+                <sc-if
+                    value="{{ isMaterial }}"
+                    hint-placeholder-val="{{ false }}"
+                >
+                    <div>
+                        <!-- MATERIAL INDEX -->
+                        <sc-if
+                            value="{{ isMaterialIndex }}"
+                            hint-placeholder-val="{{ true }}"
+                        >
+                            <div>
+                                <div
+                                    style="
+                                        max-width: 1180px;
+                                        margin: 0 auto;
+                                        padding: clamp(48px, 6vw, 80px)
+                                            clamp(24px, 5vw, 56px)
+                                            clamp(20px, 3vw, 32px);
+                                    "
+                                >
+                                    <div
+                                        style="
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 14px;
+                                            margin-bottom: 24px;
+                                        "
+                                    >
+                                        <div
+                                            style="
+                                                width: 30px;
+                                                height: 1.5px;
+                                                background: #c99a3a;
+                                            "
+                                        ></div>
+                                        <span
+                                            style="
+                                                font-size: 12px;
+                                                letter-spacing: 0.28em;
+                                                text-transform: uppercase;
+                                                color: #a87e22;
+                                                font-weight: 700;
+                                            "
+                                            >Material</span
+                                        >
+                                    </div>
+                                    <h1
+                                        style="
+                                            font-family:
+                                                &quot;Cormorant Garamond&quot;,
+                                                serif;
+                                            font-weight: 500;
+                                            font-size: clamp(40px, 6vw, 72px);
+                                            line-height: 1.02;
+                                            letter-spacing: -0.015em;
+                                            color: #241d33;
+                                            margin: 0;
+                                            max-width: 780px;
+                                        "
+                                    >
+                                        Recursos para
+                                        <span
+                                            style="
+                                                font-style: italic;
+                                                color: #6b4fa0;
+                                            "
+                                            >estudar e crescer</span
+                                        >
+                                        juntos.
+                                    </h1>
+                                    <p
+                                        style="
+                                            font-size: clamp(17px, 1.4vw, 20px);
+                                            line-height: 1.65;
+                                            color: #4a4360;
+                                            max-width: 600px;
+                                            margin: 30px 0 0;
+                                        "
+                                    >
+                                        Estudos preparados para os encontros da
+                                        Palavra do Reino — para ler antes,
+                                        durante ou depois.
+                                    </p>
+                                </div>
+
+                                <!-- Estudos subsection -->
+                                <div
+                                    style="
+                                        background: #f4eee3;
+                                        border-top: 1px solid
+                                            rgba(36, 29, 51, 0.06);
+                                        border-bottom: 1px solid
+                                            rgba(36, 29, 51, 0.06);
+                                    "
+                                >
+                                    <div
+                                        style="
+                                            max-width: 1180px;
+                                            margin: 0 auto;
+                                            padding: clamp(56px, 8vw, 90px)
+                                                clamp(24px, 5vw, 56px);
+                                        "
+                                    >
+                                        <div
+                                            style="
+                                                display: flex;
+                                                align-items: center;
+                                                gap: 14px;
+                                                margin-bottom: 14px;
+                                            "
+                                        >
+                                            <div
+                                                style="
+                                                    width: 30px;
+                                                    height: 1.5px;
+                                                    background: #c99a3a;
+                                                "
+                                            ></div>
+                                            <span
+                                                style="
+                                                    font-size: 12px;
+                                                    letter-spacing: 0.28em;
+                                                    text-transform: uppercase;
+                                                    color: #a87e22;
+                                                    font-weight: 700;
+                                                "
+                                                >Estudos</span
+                                            >
+                                        </div>
+                                        <h2
+                                            style="
+                                                font-family:
+                                                    &quot;Cormorant Garamond&quot;,
+                                                    serif;
+                                                font-weight: 500;
+                                                font-size: clamp(
+                                                    28px,
+                                                    3.6vw,
+                                                    44px
+                                                );
+                                                line-height: 1.06;
+                                                color: #241d33;
+                                                margin: 0 0 10px;
+                                                max-width: 560px;
+                                            "
+                                        >
+                                            Fruto do Espírito Santo
+                                        </h2>
+                                        <p
+                                            style="
+                                                font-size: 16px;
+                                                line-height: 1.66;
+                                                color: #544d68;
+                                                margin: 0 0 44px;
+                                                max-width: 520px;
+                                            "
+                                        >
+                                            Uma série de 9 estudos sobre as
+                                            virtudes do Espírito, baseada em
+                                            Gálatas 5:22-23.
+                                        </p>
+
+                                        <div
+                                            style="
+                                                display: grid;
+                                                grid-template-columns: repeat(
+                                                    3,
+                                                    1fr
+                                                );
+                                                gap: 20px;
+                                            "
+                                        >
+                                            <!-- Estudo 01: Amor -->
+                                            <div
+                                                onClick="{{ openStudyAmor }}"
+                                                style="
+                                                    background: #fff;
+                                                    border: 1px solid #ece6da;
+                                                    border-radius: 20px;
+                                                    padding: clamp(
+                                                        22px,
+                                                        2.6vw,
+                                                        34px
+                                                    );
+                                                    box-shadow: 0 20px 44px
+                                                        -30px
+                                                        rgba(
+                                                            70,
+                                                            40,
+                                                            120,
+                                                            0.35
+                                                        );
+                                                    cursor: pointer;
+                                                "
+                                                style-hover="box-shadow:0 24px 50px -28px rgba(107,79,160,0.45);"
+                                            >
+                                                <div
+                                                    style="
+                                                        display: flex;
+                                                        justify-content: space-between;
+                                                        align-items: flex-start;
+                                                        margin-bottom: 18px;
+                                                    "
+                                                >
+                                                    <span
+                                                        style="
+                                                            display: inline-block;
+                                                            background: #eee7f8;
+                                                            color: #6b4fa0;
+                                                            font-size: 11.5px;
+                                                            font-weight: 700;
+                                                            letter-spacing: 0.12em;
+                                                            text-transform: uppercase;
+                                                            padding: 6px 14px;
+                                                            border-radius: 999px;
+                                                        "
+                                                        >Estudo 01</span
+                                                    >
+                                                    <span
+                                                        style="
+                                                            font-family:
+                                                                &quot;Cormorant Garamond&quot;,
+                                                                serif;
+                                                            font-size: 40px;
+                                                            color: #e5a93c;
+                                                            font-weight: 500;
+                                                            line-height: 1;
+                                                        "
+                                                        >01</span
+                                                    >
+                                                </div>
+                                                <h3
+                                                    style="
+                                                        font-family:
+                                                            &quot;Cormorant Garamond&quot;,
+                                                            serif;
+                                                        font-weight: 600;
+                                                        font-size: 30px;
+                                                        margin: 0 0 8px;
+                                                        color: #241d33;
+                                                    "
+                                                >
+                                                    Amor
+                                                </h3>
+                                                <p
+                                                    style="
+                                                        font-size: 14.5px;
+                                                        line-height: 1.6;
+                                                        color: #5a5470;
+                                                        margin: 0 0 20px;
+                                                    "
+                                                >
+                                                    A base de todo o fruto do
+                                                    Espírito. O amor que
+                                                    transforma vem de Deus.
+                                                </p>
+                                                <span
+                                                    style="
+                                                        font-size: 13.5px;
+                                                        font-weight: 700;
+                                                        color: #6b4fa0;
+                                                    "
+                                                    >Ler estudo →</span
+                                                >
+                                            </div>
+
+                                            <!-- Estudos 02–09: Em breve -->
+                                            <div
+                                                style="
+                                                    background: #faf8f5;
+                                                    border: 1px solid #ede8de;
+                                                    border-radius: 20px;
+                                                    padding: clamp(
+                                                        22px,
+                                                        2.6vw,
+                                                        34px
+                                                    );
+                                                    opacity: 0.6;
+                                                "
+                                            >
+                                                <div
+                                                    style="
+                                                        display: flex;
+                                                        justify-content: space-between;
+                                                        align-items: flex-start;
+                                                        margin-bottom: 18px;
+                                                    "
+                                                >
+                                                    <span
+                                                        style="
+                                                            display: inline-block;
+                                                            background: #f0ede8;
+                                                            color: #8a8398;
+                                                            font-size: 11.5px;
+                                                            font-weight: 700;
+                                                            letter-spacing: 0.12em;
+                                                            text-transform: uppercase;
+                                                            padding: 6px 14px;
+                                                            border-radius: 999px;
+                                                        "
+                                                        >Em breve</span
+                                                    >
+                                                    <span
+                                                        style="
+                                                            font-family:
+                                                                &quot;Cormorant Garamond&quot;,
+                                                                serif;
+                                                            font-size: 40px;
+                                                            color: #c9c2d6;
+                                                            font-weight: 500;
+                                                            line-height: 1;
+                                                        "
+                                                        >02</span
+                                                    >
+                                                </div>
+                                                <h3
+                                                    style="
+                                                        font-family:
+                                                            &quot;Cormorant Garamond&quot;,
+                                                            serif;
+                                                        font-weight: 600;
+                                                        font-size: 30px;
+                                                        margin: 0 0 8px;
+                                                        color: #8a8398;
+                                                    "
+                                                >
+                                                    Alegria
+                                                </h3>
+                                                <p
+                                                    style="
+                                                        font-size: 14.5px;
+                                                        line-height: 1.6;
+                                                        color: #a09aaf;
+                                                        margin: 0;
+                                                    "
+                                                >
+                                                    Em breve.
+                                                </p>
+                                            </div>
+
+                                            <div
+                                                style="
+                                                    background: #faf8f5;
+                                                    border: 1px solid #ede8de;
+                                                    border-radius: 20px;
+                                                    padding: clamp(
+                                                        22px,
+                                                        2.6vw,
+                                                        34px
+                                                    );
+                                                    opacity: 0.5;
+                                                "
+                                            >
+                                                <div
+                                                    style="
+                                                        display: flex;
+                                                        justify-content: space-between;
+                                                        align-items: flex-start;
+                                                        margin-bottom: 18px;
+                                                    "
+                                                >
+                                                    <span
+                                                        style="
+                                                            display: inline-block;
+                                                            background: #f0ede8;
+                                                            color: #8a8398;
+                                                            font-size: 11.5px;
+                                                            font-weight: 700;
+                                                            letter-spacing: 0.12em;
+                                                            text-transform: uppercase;
+                                                            padding: 6px 14px;
+                                                            border-radius: 999px;
+                                                        "
+                                                        >Em breve</span
+                                                    >
+                                                    <span
+                                                        style="
+                                                            font-family:
+                                                                &quot;Cormorant Garamond&quot;,
+                                                                serif;
+                                                            font-size: 40px;
+                                                            color: #c9c2d6;
+                                                            font-weight: 500;
+                                                            line-height: 1;
+                                                        "
+                                                        >03–09</span
+                                                    >
+                                                </div>
+                                                <h3
+                                                    style="
+                                                        font-family:
+                                                            &quot;Cormorant Garamond&quot;,
+                                                            serif;
+                                                        font-weight: 600;
+                                                        font-size: 30px;
+                                                        margin: 0 0 8px;
+                                                        color: #8a8398;
+                                                    "
+                                                >
+                                                    Paz · e mais 7
+                                                </h3>
+                                                <p
+                                                    style="
+                                                        font-size: 14.5px;
+                                                        line-height: 1.6;
+                                                        color: #a09aaf;
+                                                        margin: 0;
+                                                    "
+                                                >
+                                                    Em breve.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </sc-if>
+
+                        <!-- ESTUDO: AMOR -->
+                        <sc-if
+                            value="{{ isStudyAmor }}"
+                            hint-placeholder-val="{{ false }}"
+                        >
+                            <div>
+                                <!-- Breadcrumb -->
+                                <div
+                                    style="
+                                        max-width: 860px;
+                                        margin: 0 auto;
+                                        padding: clamp(32px, 4vw, 48px)
+                                            clamp(24px, 5vw, 56px) 0;
+                                    "
+                                >
+                                    <span
+                                        onClick="{{ closeStudy }}"
+                                        style="
+                                            font-size: 13.5px;
+                                            font-weight: 700;
+                                            color: #6b4fa0;
+                                            cursor: pointer;
+                                            display: inline-flex;
+                                            align-items: center;
+                                            gap: 6px;
+                                        "
+                                        style-hover="color:#43306B;"
+                                        >← Material / Estudos</span
+                                    >
+                                </div>
+
+                                <!-- Study hero -->
+                                <div
+                                    style="
+                                        max-width: 860px;
+                                        margin: 0 auto;
+                                        padding: clamp(28px, 3.6vw, 44px)
+                                            clamp(24px, 5vw, 56px)
+                                            clamp(40px, 5vw, 56px);
+                                    "
+                                >
+                                    <div
+                                        style="
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 12px;
+                                            margin-bottom: 24px;
+                                            flex-wrap: wrap;
+                                        "
+                                    >
+                                        <span
+                                            style="
+                                                display: inline-block;
+                                                background: #eee7f8;
+                                                color: #6b4fa0;
+                                                font-size: 11.5px;
+                                                font-weight: 700;
+                                                letter-spacing: 0.12em;
+                                                text-transform: uppercase;
+                                                padding: 6px 14px;
+                                                border-radius: 999px;
+                                            "
+                                            >Fruto do Espírito Santo</span
+                                        >
+                                        <span
+                                            style="
+                                                display: inline-block;
+                                                background: #fbefd4;
+                                                color: #a8791c;
+                                                font-size: 11.5px;
+                                                font-weight: 700;
+                                                letter-spacing: 0.12em;
+                                                text-transform: uppercase;
+                                                padding: 6px 14px;
+                                                border-radius: 999px;
+                                            "
+                                            >Estudo 01 de 09</span
+                                        >
+                                    </div>
+                                    <h1
+                                        style="
+                                            font-family:
+                                                &quot;Cormorant Garamond&quot;,
+                                                serif;
+                                            font-weight: 500;
+                                            font-size: clamp(52px, 8vw, 90px);
+                                            line-height: 0.96;
+                                            letter-spacing: -0.02em;
+                                            color: #241d33;
+                                            margin: 0 0 28px;
+                                        "
+                                    >
+                                        Amor
+                                    </h1>
+
+                                    <!-- Key verse card -->
+                                    <div
+                                        style="
+                                            background: #43306b;
+                                            border-radius: 18px;
+                                            padding: clamp(24px, 3vw, 36px);
+                                            margin-bottom: 48px;
+                                        "
+                                    >
+                                        <div
+                                            style="
+                                                font-size: 11.5px;
+                                                letter-spacing: 0.2em;
+                                                text-transform: uppercase;
+                                                color: #e0be6e;
+                                                font-weight: 700;
+                                                margin-bottom: 12px;
+                                            "
+                                        >
+                                            Versículo-chave
+                                        </div>
+                                        <div
+                                            style="
+                                                font-family:
+                                                    &quot;Cormorant Garamond&quot;,
+                                                    serif;
+                                                font-style: italic;
+                                                font-weight: 500;
+                                                font-size: clamp(20px, 2.4vw, 26px);
+                                                line-height: 1.44;
+                                                color: #f4effa;
+                                            "
+                                        >
+                                            "Um mandamento novo vos dou: que vos
+                                            ameis uns aos outros; assim como eu
+                                            vos amei, que também vós vos ameis
+                                            uns aos outros."
+                                        </div>
+                                        <div
+                                            style="
+                                                font-size: 12.5px;
+                                                letter-spacing: 0.16em;
+                                                text-transform: uppercase;
+                                                color: #e0be6e;
+                                                font-weight: 700;
+                                                margin-top: 14px;
+                                            "
+                                        >
+                                            João 13:34
+                                        </div>
+                                    </div>
+
+                                    <!-- Intro -->
+                                    <div
+                                        style="
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 14px;
+                                            margin-bottom: 16px;
+                                        "
+                                    >
+                                        <div
+                                            style="
+                                                width: 30px;
+                                                height: 1.5px;
+                                                background: #c99a3a;
+                                            "
+                                        ></div>
+                                        <span
+                                            style="
+                                                font-size: 12px;
+                                                letter-spacing: 0.28em;
+                                                text-transform: uppercase;
+                                                color: #a87e22;
+                                                font-weight: 700;
+                                            "
+                                            >Introdução</span
+                                        >
+                                    </div>
+                                    <p
+                                        style="
+                                            font-size: 17px;
+                                            line-height: 1.75;
+                                            color: #544d68;
+                                            margin: 0 0 18px;
+                                        "
+                                    >
+                                        Esta série é baseada em 9 virtudes que
+                                        vamos estudar durante os encontros da
+                                        Palavra do Reino. Para que este estudo
+                                        seja uma transformação de dentro para
+                                        fora, onde todos possam enxergar o fruto
+                                        do Espírito Santo em nós.
+                                    </p>
+                                    <p
+                                        style="
+                                            font-size: 17px;
+                                            line-height: 1.75;
+                                            color: #544d68;
+                                            margin: 0 0 18px;
+                                        "
+                                    >
+                                        Por vezes começamos outra vez a louvar
+                                        a nós mesmos? Ou necessitamos, como
+                                        alguns, de cartas de recomendação para
+                                        vós, ou da vossa parte?
+                                        <span
+                                            style="
+                                                font-weight: 700;
+                                                color: #241d33;
+                                            "
+                                            >Vós sois a nossa carta, escrita em
+                                            nossos corações, conhecida e lida
+                                            por todos os homens.</span
+                                        >
+                                        É manifesto que sois a carta de Cristo,
+                                        ministrada por nós, e escrita não com
+                                        tinta, mas com o Espírito do Deus vivo;
+                                        não em tábuas de pedra, mas nas tábuas
+                                        de carne do coração. E por Cristo temos
+                                        tal confiança em Deus. Não que sejamos
+                                        capazes, por nós mesmos, de pensar
+                                        alguma coisa, como de nós mesmos, mas a
+                                        nossa capacidade vem de Deus. O qual nos
+                                        fez também capazes de ser ministros de
+                                        um novo testamento, não da letra, mas do
+                                        espírito; porque a letra mata e o
+                                        espírito vivifica.
+                                        <span
+                                            style="
+                                                font-size: 14px;
+                                                color: #a87e22;
+                                                font-weight: 700;
+                                                font-style: italic;
+                                            "
+                                            >(2 Coríntios 3:1–6)</span
+                                        >
+                                    </p>
+                                </div>
+
+                                <!-- Reflexão -->
+                                <div
+                                    style="
+                                        background: #f4eee3;
+                                        border-top: 1px solid
+                                            rgba(36, 29, 51, 0.06);
+                                        border-bottom: 1px solid
+                                            rgba(36, 29, 51, 0.06);
+                                    "
+                                >
+                                    <div
+                                        style="
+                                            max-width: 860px;
+                                            margin: 0 auto;
+                                            padding: clamp(44px, 6vw, 68px)
+                                                clamp(24px, 5vw, 56px);
+                                        "
+                                    >
+                                        <div
+                                            style="
+                                                display: flex;
+                                                align-items: center;
+                                                gap: 14px;
+                                                margin-bottom: 16px;
+                                            "
+                                        >
+                                            <div
+                                                style="
+                                                    width: 30px;
+                                                    height: 1.5px;
+                                                    background: #c99a3a;
+                                                "
+                                            ></div>
+                                            <span
+                                                style="
+                                                    font-size: 12px;
+                                                    letter-spacing: 0.28em;
+                                                    text-transform: uppercase;
+                                                    color: #a87e22;
+                                                    font-weight: 700;
+                                                "
+                                                >Reflexão</span
+                                            >
+                                        </div>
+                                        <p
+                                            style="
+                                                font-size: 17px;
+                                                line-height: 1.75;
+                                                color: #544d68;
+                                                margin: 0 0 20px;
+                                            "
+                                        >
+                                            Já se perguntou porque a palavra
+                                            <span
+                                                style="
+                                                    font-weight: 700;
+                                                    color: #241d33;
+                                                "
+                                                >"fruto"</span
+                                            >
+                                            está no singular se são nove
+                                            virtudes? Porque as nove virtudes
+                                            citadas não são ingredientes
+                                            separados, cada um com sua porção.
+                                            São o fruto do Espírito Santo.
+                                        </p>
+                                        <div
+                                            style="
+                                                background: #fff;
+                                                border-left: 4px solid #e5a93c;
+                                                border-radius: 0 12px 12px 0;
+                                                padding: 20px 24px;
+                                                margin-bottom: 20px;
+                                            "
+                                        >
+                                            <span
+                                                style="
+                                                    font-size: 12px;
+                                                    letter-spacing: 0.2em;
+                                                    text-transform: uppercase;
+                                                    color: #a87e22;
+                                                    font-weight: 700;
+                                                    display: block;
+                                                    margin-bottom: 8px;
+                                                "
+                                                >Por exemplo</span
+                                            >
+                                            <p
+                                                style="
+                                                    font-size: 16px;
+                                                    line-height: 1.7;
+                                                    color: #544d68;
+                                                    margin: 0;
+                                                "
+                                            >
+                                                Imagine uma laranja: ela é um
+                                                único fruto, mas é composta por
+                                                vários gomos. Da mesma forma, o
+                                                caráter de Cristo manifestado no
+                                                cristão é um só, composto por
+                                                nove características integradas:
+                                                amor, alegria, paz,
+                                                longanimidade, benignidade,
+                                                bondade, fidelidade, mansidão e
+                                                domínio próprio.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Mensagem central -->
+                                <div
+                                    style="
+                                        background: #43306b;
+                                        padding: clamp(44px, 6vw, 72px)
+                                            clamp(24px, 5vw, 56px);
+                                    "
+                                >
+                                    <div
+                                        style="
+                                            max-width: 860px;
+                                            margin: 0 auto;
+                                        "
+                                    >
+                                        <div
+                                            style="
+                                                display: flex;
+                                                align-items: center;
+                                                gap: 14px;
+                                                margin-bottom: 16px;
+                                            "
+                                        >
+                                            <div
+                                                style="
+                                                    width: 30px;
+                                                    height: 1.5px;
+                                                    background: #e5a93c;
+                                                "
+                                            ></div>
+                                            <span
+                                                style="
+                                                    font-size: 12px;
+                                                    letter-spacing: 0.28em;
+                                                    text-transform: uppercase;
+                                                    color: #e0be6e;
+                                                    font-weight: 700;
+                                                "
+                                                >Mensagem central</span
+                                            >
+                                        </div>
+                                        <h2
+                                            style="
+                                                font-family:
+                                                    &quot;Cormorant Garamond&quot;,
+                                                    serif;
+                                                font-weight: 500;
+                                                font-size: clamp(
+                                                    26px,
+                                                    3.4vw,
+                                                    38px
+                                                );
+                                                line-height: 1.2;
+                                                color: #f4effa;
+                                                margin: 0 0 6px;
+                                            "
+                                        >
+                                            A mulher adúltera
+                                        </h2>
+                                        <div
+                                            style="
+                                                font-size: 13px;
+                                                letter-spacing: 0.16em;
+                                                text-transform: uppercase;
+                                                color: #e0be6e;
+                                                font-weight: 700;
+                                                margin-bottom: 28px;
+                                            "
+                                        >
+                                            João 8:1–11
+                                        </div>
+                                        <p
+                                            style="
+                                                font-size: 17px;
+                                                line-height: 1.8;
+                                                color: #d7cee8;
+                                                margin: 0;
+                                                font-style: italic;
+                                            "
+                                        >
+                                            Jesus, porém, foi para o Monte das
+                                            Oliveiras. Pela manhã cedo tornou
+                                            para o templo, e todo o povo vinha a
+                                            ele; e, assentando-se, os ensinava.
+                                            E os escribas e fariseus
+                                            trouxeram-lhe uma mulher apanhada em
+                                            adultério; e, pondo-a no meio,
+                                            disseram-lhe: Mestre, esta mulher
+                                            foi apanhada no próprio ato do
+                                            adultério. E na lei nos mandou Moisés
+                                            que as tais fossem apedrejadas. Tu,
+                                            pois, que dizes? Isso diziam eles,
+                                            tentando-o, para que tivessem de que
+                                            o acusar. Mas Jesus, inclinando-se,
+                                            escrevia com o dedo na terra. Porém,
+                                            como insistissem, interrogando-o,
+                                            endireitou-se, e disse-lhes: Aquele
+                                            que entre vós estiver sem pecado seja
+                                            o primeiro que atire a pedra contra
+                                            ela. E, tornando a inclinar-se,
+                                            escrevia na terra. Porém eles, ouvindo
+                                            isto, acusados pela consciência,
+                                            saíram um a um, a começar pelos mais
+                                            velhos até ao último; ficou só Jesus
+                                            e a mulher que estava no meio. E
+                                            Jesus, endireitando-se e não vendo
+                                            ninguém mais do que a mulher,
+                                            disse-lhe: Mulher, onde estão os teus
+                                            acusadores? Ninguém te condenou? E
+                                            ela disse: Ninguém, Senhor. E
+                                            disse-lhe Jesus:
+                                            <span
+                                                style="
+                                                    color: #fff;
+                                                    font-weight: 600;
+                                                    font-style: normal;
+                                                "
+                                                >Nem eu também te condeno;
+                                                vai-te e não peques mais.</span
+                                            >
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Praticando a leitura -->
+                                <div
+                                    style="
+                                        max-width: 860px;
+                                        margin: 0 auto;
+                                        padding: clamp(48px, 6vw, 72px)
+                                            clamp(24px, 5vw, 56px);
+                                    "
+                                >
+                                    <div
+                                        style="
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 14px;
+                                            margin-bottom: 16px;
+                                        "
+                                    >
+                                        <div
+                                            style="
+                                                width: 30px;
+                                                height: 1.5px;
+                                                background: #c99a3a;
+                                            "
+                                        ></div>
+                                        <span
+                                            style="
+                                                font-size: 12px;
+                                                letter-spacing: 0.28em;
+                                                text-transform: uppercase;
+                                                color: #a87e22;
+                                                font-weight: 700;
+                                            "
+                                            >Praticando a leitura</span
+                                        >
+                                    </div>
+                                    <h2
+                                        style="
+                                            font-family:
+                                                &quot;Cormorant Garamond&quot;,
+                                                serif;
+                                            font-weight: 600;
+                                            font-size: clamp(26px, 3.2vw, 36px);
+                                            line-height: 1.1;
+                                            color: #241d33;
+                                            margin: 0 0 28px;
+                                        "
+                                    >
+                                        Virtude: Amor como Fruto do Espírito
+                                    </h2>
+
+                                    <p
+                                        style="
+                                            font-size: 17px;
+                                            line-height: 1.75;
+                                            color: #544d68;
+                                            margin: 0 0 18px;
+                                        "
+                                    >
+                                        O amor (em grego,
+                                        <span
+                                            style="
+                                                font-style: italic;
+                                                font-weight: 600;
+                                                color: #241d33;
+                                            "
+                                            >ágape</span
+                                        >) é a primeira virtude listada por
+                                        Paulo como fruto do Espírito em Gálatas
+                                        5:22. Jesus mesmo disse que devemos amar
+                                        a Deus e ao próximo (Mt 22:37–40). A
+                                        Bíblia mostra que, por conta da natureza
+                                        caída devido ao pecado, não é possível
+                                        amar de verdade como Deus — não por
+                                        força própria.
+                                    </p>
+                                    <p
+                                        style="
+                                            font-size: 17px;
+                                            line-height: 1.75;
+                                            color: #544d68;
+                                            margin: 0 0 18px;
+                                        "
+                                    >
+                                        Romanos 5:10 diz que quando éramos
+                                        inimigos de Deus. Tito 3:3 nos chama de
+                                        "odiados e odiando uns aos outros". Isso
+                                        quer dizer que o ser humano, sem o
+                                        Espírito, ama de forma agônica,
+                                        condicional, limitada. O amor que Deus
+                                        quer é diferente: o amor que busca o bem
+                                        do outro sem esperar algo em troca.
+                                    </p>
+                                    <p
+                                        style="
+                                            font-size: 17px;
+                                            line-height: 1.75;
+                                            color: #544d68;
+                                            margin: 0 0 18px;
+                                        "
+                                    >
+                                        Esse amor não é do próprio Jesus. A
+                                        Bíblia diz que "Deus é amor" (1Jo 4:8).
+                                        Esse amor tem origem no caráter de Deus,
+                                        ou seja, é parte do caráter de Cristo —
+                                        então, só pode ser quem tem o Espírito
+                                        Santo em si. "Todo aquele que ama é
+                                        nascido de Deus e conhece a Deus" (1Jo
+                                        4:7).
+                                    </p>
+
+                                    <!-- Callout -->
+                                    <div
+                                        style="
+                                            background: #efe9f7;
+                                            border-radius: 18px;
+                                            padding: clamp(24px, 3vw, 36px);
+                                            margin: 32px 0;
+                                        "
+                                    >
+                                        <p
+                                            style="
+                                                font-family:
+                                                    &quot;Cormorant Garamond&quot;,
+                                                    serif;
+                                                font-style: italic;
+                                                font-weight: 500;
+                                                font-size: clamp(
+                                                    20px,
+                                                    2.4vw,
+                                                    26px
+                                                );
+                                                line-height: 1.44;
+                                                color: #43306b;
+                                                margin: 0;
+                                            "
+                                        >
+                                            O verdadeiro amor não se trata de um
+                                            sentimento bonito — ele se mostra em
+                                            atitudes concretas.
+                                        </p>
+                                    </div>
+
+                                    <p
+                                        style="
+                                            font-size: 17px;
+                                            line-height: 1.75;
+                                            color: #544d68;
+                                            margin: 0 0 18px;
+                                        "
+                                    >
+                                        Esse amor é um amor que se doa quando
+                                        qualquer razão humana diria para se
+                                        afastar. É o Espírito que produz esse
+                                        amor em nós. 1 Coríntios 13 deixa claro:
+                                        falar em línguas, ter dons espirituais e
+                                        até fazer grandes sacrifícios não
+                                        valerão nada se não houver amor que se
+                                        demonstra em consideração pelo outro.
+                                    </p>
+                                    <p
+                                        style="
+                                            font-size: 17px;
+                                            line-height: 1.75;
+                                            color: #544d68;
+                                            margin: 0 0 18px;
+                                        "
+                                    >
+                                        O mais importante:
+                                        <span
+                                            style="
+                                                font-weight: 700;
+                                                color: #241d33;
+                                            "
+                                            >esse amor não vem do nosso
+                                            esforço.</span
+                                        >
+                                        Paulo fala que o amor é fruto do
+                                        Espírito. Assim como um galho só dá
+                                        fruto se estiver ligado a Jesus (Jo
+                                        15:5), o Espírito é a seiva que circula
+                                        na videira e faz os frutos crescerem.
+                                    </p>
+                                    <p
+                                        style="
+                                            font-size: 17px;
+                                            line-height: 1.75;
+                                            color: #544d68;
+                                            margin: 0;
+                                        "
+                                    >
+                                        O amor, então, é o caráter do Espírito
+                                        Santo. Não é algo que nasce
+                                        naturalmente — é o sinal de que o
+                                        Espírito está agindo em nós. Não é da
+                                        conquista ou do esforço; é resultado de
+                                        estarmos ligados a Deus.
+                                    </p>
+                                </div>
+
+                                <!-- AMOR que transforma -->
+                                <div
+                                    style="
+                                        background: #f4eee3;
+                                        border-top: 1px solid
+                                            rgba(36, 29, 51, 0.06);
+                                        border-bottom: 1px solid
+                                            rgba(36, 29, 51, 0.06);
+                                    "
+                                >
+                                    <div
+                                        style="
+                                            max-width: 860px;
+                                            margin: 0 auto;
+                                            padding: clamp(48px, 6vw, 72px)
+                                                clamp(24px, 5vw, 56px);
+                                        "
+                                    >
+                                        <div
+                                            style="
+                                                display: flex;
+                                                align-items: center;
+                                                gap: 14px;
+                                                margin-bottom: 16px;
+                                            "
+                                        >
+                                            <div
+                                                style="
+                                                    width: 30px;
+                                                    height: 1.5px;
+                                                    background: #c99a3a;
+                                                "
+                                            ></div>
+                                            <span
+                                                style="
+                                                    font-size: 12px;
+                                                    letter-spacing: 0.28em;
+                                                    text-transform: uppercase;
+                                                    color: #a87e22;
+                                                    font-weight: 700;
+                                                "
+                                                >Amor que transforma</span
+                                            >
+                                        </div>
+                                        <p
+                                            style="
+                                                font-size: 17px;
+                                                line-height: 1.75;
+                                                color: #544d68;
+                                                margin: 0 0 18px;
+                                            "
+                                        >
+                                            O amor é a base de todo o fruto do
+                                            Espírito, porque Deus é amor. Mas
+                                            esse amor não é só um sentimento
+                                            bonito: é um amor que se entrega
+                                            mesmo quando o outro não merece.
+                                            Assim como Jesus amou: deu a vida
+                                            por nós quando ainda éramos
+                                            pecadores (Rm 5:8).
+                                        </p>
+                                        <p
+                                            style="
+                                                font-size: 17px;
+                                                line-height: 1.75;
+                                                color: #544d68;
+                                                margin: 0;
+                                            "
+                                        >
+                                            Esse amor não é um sentimento
+                                            espontâneo. O verdadeiro amor se
+                                            mostra em atitudes concretas. É um
+                                            amor que se doa, que sacrifica, que
+                                            busca o bem do outro sem esperar em
+                                            troca. E é prova de que Deus nos
+                                            criou assim como um galho do fruto se
+                                            estiver ligado a Jesus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Para refletir + Para viver -->
+                                <div
+                                    style="
+                                        max-width: 860px;
+                                        margin: 0 auto;
+                                        padding: clamp(48px, 6vw, 72px)
+                                            clamp(24px, 5vw, 56px);
+                                        display: grid;
+                                        grid-template-columns: 1fr 1fr;
+                                        gap: clamp(28px, 4vw, 48px);
+                                        align-items: start;
+                                    "
+                                >
+                                    <!-- Para refletir -->
+                                    <div>
+                                        <div
+                                            style="
+                                                border-top: 2px solid #e5a93c;
+                                                padding-top: 22px;
+                                            "
+                                        >
+                                            <h3
+                                                style="
+                                                    font-family:
+                                                        &quot;Cormorant Garamond&quot;,
+                                                        serif;
+                                                    font-weight: 600;
+                                                    font-size: 26px;
+                                                    margin: 0 0 20px;
+                                                    color: #241d33;
+                                                "
+                                            >
+                                                Para refletir
+                                            </h3>
+                                            <div
+                                                style="
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    gap: 14px;
+                                                "
+                                            >
+                                                <div
+                                                    style="
+                                                        display: flex;
+                                                        gap: 12px;
+                                                        align-items: flex-start;
+                                                    "
+                                                >
+                                                    <div
+                                                        style="
+                                                            width: 6px;
+                                                            height: 6px;
+                                                            border-radius: 50%;
+                                                            background: #e5a93c;
+                                                            margin-top: 8px;
+                                                            flex-shrink: 0;
+                                                        "
+                                                    ></div>
+                                                    <p
+                                                        style="
+                                                            font-size: 15.5px;
+                                                            line-height: 1.65;
+                                                            color: #544d68;
+                                                            margin: 0;
+                                                        "
+                                                    >
+                                                        Tenho amado com
+                                                        generosidade ou esperando
+                                                        algo em troca?
+                                                    </p>
+                                                </div>
+                                                <div
+                                                    style="
+                                                        display: flex;
+                                                        gap: 12px;
+                                                        align-items: flex-start;
+                                                    "
+                                                >
+                                                    <div
+                                                        style="
+                                                            width: 6px;
+                                                            height: 6px;
+                                                            border-radius: 50%;
+                                                            background: #e5a93c;
+                                                            margin-top: 8px;
+                                                            flex-shrink: 0;
+                                                        "
+                                                    ></div>
+                                                    <p
+                                                        style="
+                                                            font-size: 15.5px;
+                                                            line-height: 1.65;
+                                                            color: #544d68;
+                                                            margin: 0;
+                                                        "
+                                                    >
+                                                        Quais situações me
+                                                        mostram que o Espírito me
+                                                        ensina a amar como o
+                                                        Senhor Jesus?
+                                                    </p>
+                                                </div>
+                                                <div
+                                                    style="
+                                                        display: flex;
+                                                        gap: 12px;
+                                                        align-items: flex-start;
+                                                    "
+                                                >
+                                                    <div
+                                                        style="
+                                                            width: 6px;
+                                                            height: 6px;
+                                                            border-radius: 50%;
+                                                            background: #e5a93c;
+                                                            margin-top: 8px;
+                                                            flex-shrink: 0;
+                                                        "
+                                                    ></div>
+                                                    <p
+                                                        style="
+                                                            font-size: 15.5px;
+                                                            line-height: 1.65;
+                                                            color: #544d68;
+                                                            margin: 0;
+                                                        "
+                                                    >
+                                                        O meu amor está ligado
+                                                        mais em palavras ou em
+                                                        obras?
+                                                    </p>
+                                                </div>
+                                                <div
+                                                    style="
+                                                        display: flex;
+                                                        gap: 12px;
+                                                        align-items: flex-start;
+                                                    "
+                                                >
+                                                    <div
+                                                        style="
+                                                            width: 6px;
+                                                            height: 6px;
+                                                            border-radius: 50%;
+                                                            background: #e5a93c;
+                                                            margin-top: 8px;
+                                                            flex-shrink: 0;
+                                                        "
+                                                    ></div>
+                                                    <p
+                                                        style="
+                                                            font-size: 15.5px;
+                                                            line-height: 1.65;
+                                                            color: #544d68;
+                                                            margin: 0;
+                                                        "
+                                                    >
+                                                        Eu consigo amar aquele
+                                                        que me trata super bem
+                                                        igual ao que eu
+                                                        despreza?
+                                                    </p>
+                                                </div>
+                                                <div
+                                                    style="
+                                                        display: flex;
+                                                        gap: 12px;
+                                                        align-items: flex-start;
+                                                    "
+                                                >
+                                                    <div
+                                                        style="
+                                                            width: 6px;
+                                                            height: 6px;
+                                                            border-radius: 50%;
+                                                            background: #e5a93c;
+                                                            margin-top: 8px;
+                                                            flex-shrink: 0;
+                                                        "
+                                                    ></div>
+                                                    <p
+                                                        style="
+                                                            font-size: 15.5px;
+                                                            line-height: 1.65;
+                                                            color: #544d68;
+                                                            margin: 0;
+                                                        "
+                                                    >
+                                                        Quando foi a última vez
+                                                        que demonstrei amor por
+                                                        pessoas difíceis com
+                                                        ações concretas — não só
+                                                        palavras?
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Para viver -->
+                                    <div>
+                                        <div
+                                            style="
+                                                border-top: 2px solid #6b4fa0;
+                                                padding-top: 22px;
+                                            "
+                                        >
+                                            <h3
+                                                style="
+                                                    font-family:
+                                                        &quot;Cormorant Garamond&quot;,
+                                                        serif;
+                                                    font-weight: 600;
+                                                    font-size: 26px;
+                                                    margin: 0 0 20px;
+                                                    color: #241d33;
+                                                "
+                                            >
+                                                Para viver
+                                            </h3>
+                                            <p
+                                                style="
+                                                    font-size: 15.5px;
+                                                    line-height: 1.7;
+                                                    color: #544d68;
+                                                    margin: 0 0 18px;
+                                                "
+                                            >
+                                                Pratique um gesto de amor com
+                                                alguma pessoa difícil de amar.
+                                                Doe tempo, sua atenção, sua
+                                                ajuda prática.
+                                            </p>
+                                            <p
+                                                style="
+                                                    font-size: 15.5px;
+                                                    line-height: 1.7;
+                                                    color: #544d68;
+                                                    margin: 0;
+                                                "
+                                            >
+                                                O amor verdadeiro não é um
+                                                sentimento espontâneo — é um
+                                                fruto do Espírito que se doa
+                                                mesmo quando não é
+                                                correspondido, e que continua
+                                                amando e tratando bem
+                                                independentemente de qualquer
+                                                coisa.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Back to list -->
+                                <div
+                                    style="
+                                        text-align: center;
+                                        padding: 0 clamp(24px, 5vw, 56px)
+                                            clamp(56px, 7vw, 80px);
+                                    "
+                                >
+                                    <span
+                                        onClick="{{ closeStudy }}"
+                                        style="
+                                            display: inline-block;
+                                            border: 1.5px solid #c9bfe0;
+                                            color: #43306b;
+                                            padding: 14px 30px;
+                                            border-radius: 999px;
+                                            font-weight: 700;
+                                            font-size: 15px;
+                                            cursor: pointer;
+                                        "
+                                        style-hover="background:#F0EAF8;"
+                                        >← Ver todos os estudos</span
+                                    >
+                                </div>
+                            </div>
+                        </sc-if>
+                    </div>
+                </sc-if>
+
                 <!-- ============ FOOTER ============ -->
                 <div style="background: #241d33; color: #c9c2d6">
                     <div
@@ -3215,6 +4688,12 @@
                                         >Encontros</span
                                     >
                                     <span
+                                        onClick="{{ goMaterial }}"
+                                        style="cursor: pointer; color: #c9c2d6"
+                                        style-hover="color:#fff;"
+                                        >Material</span
+                                    >
+                                    <span
                                         onClick="{{ goContact }}"
                                         style="cursor: pointer; color: #c9c2d6"
                                         style-hover="color:#fff;"
@@ -3283,11 +4762,11 @@
         </x-dc>
         <script type="text/x-dc" data-dc-script>
             class Component extends DCLogic {
-              state = { page: 'home', name: '', email: '', interest: 'presencial', message: '', sent: false, openFaq: 0 };
+              state = { page: 'home', name: '', email: '', interest: 'presencial', message: '', sent: false, openFaq: 0, studyOpen: null };
 
               go(page) {
                 return () => {
-                  this.setState({ page });
+                  this.setState({ page, studyOpen: null });
                   if (typeof window !== 'undefined') window.scrollTo({ top: 0, behavior: 'smooth' });
                 };
               }
@@ -3332,11 +4811,17 @@
                   isBeliefs: p === 'beliefs',
                   isMeet: p === 'meet',
                   isContact: p === 'contact',
+                  isMaterial: p === 'material',
+                  isMaterialIndex: p === 'material' && !this.state.studyOpen,
+                  isStudyAmor: p === 'material' && this.state.studyOpen === 'amor',
                   goHome: this.go('home'),
                   goAbout: this.go('about'),
                   goBeliefs: this.go('beliefs'),
                   goMeet: this.go('meet'),
                   goContact: this.go('contact'),
+                  goMaterial: this.go('material'),
+                  openStudyAmor: () => { this.setState({ studyOpen: 'amor' }); if (typeof window !== 'undefined') window.scrollTo({ top: 0, behavior: 'smooth' }); },
+                  closeStudy: () => { this.setState({ studyOpen: null }); if (typeof window !== 'undefined') window.scrollTo({ top: 0, behavior: 'smooth' }); },
                   name: this.state.name,
                   email: this.state.email,
                   message: this.state.message,
