@@ -195,6 +195,19 @@
                         .bk-anim-col {
                             display: none !important;
                         }
+                        .mob-nav-links {
+                            display: none !important;
+                        }
+                        .mob-logo {
+                            font-size: 15px !important;
+                            letter-spacing: 0.1em !important;
+                        }
+                        .mob-1col {
+                            grid-template-columns: 1fr !important;
+                        }
+                        .mob-2col {
+                            grid-template-columns: repeat(2, 1fr) !important;
+                        }
                     }
                 </style>
             </helmet>
@@ -227,6 +240,7 @@
                             justify-content: space-between;
                             align-items: center;
                             height: 74px;
+                            overflow: hidden;
                         "
                     >
                         <div
@@ -263,6 +277,7 @@
                                 />
                             </svg>
                             <span
+                                class="mob-logo"
                                 style="
                                     font-family:
                                         &quot;Cormorant Garamond&quot;, serif;
@@ -285,6 +300,7 @@
                             "
                         >
                             <span
+                                class="mob-nav-links"
                                 onClick="{{ goHome }}"
                                 style="
                                     position: relative;
@@ -308,6 +324,7 @@
                                     ></span></sc-if
                             ></span>
                             <span
+                                class="mob-nav-links"
                                 onClick="{{ goAbout }}"
                                 style="
                                     position: relative;
@@ -331,6 +348,7 @@
                                     ></span></sc-if
                             ></span>
                             <span
+                                class="mob-nav-links"
                                 onClick="{{ goBeliefs }}"
                                 style="
                                     position: relative;
@@ -354,6 +372,7 @@
                                     ></span></sc-if
                             ></span>
                             <span
+                                class="mob-nav-links"
                                 onClick="{{ goMeet }}"
                                 style="
                                     position: relative;
@@ -377,6 +396,7 @@
                                     ></span></sc-if
                             ></span>
                             <span
+                                class="mob-nav-links"
                                 onClick="{{ goMaterial }}"
                                 style="
                                     position: relative;
@@ -1945,6 +1965,7 @@
 
                         <!-- quem somos teaser -->
                         <div
+                            class="mob-1col"
                             style="
                                 max-width: 1180px;
                                 margin: 0 auto;
@@ -2192,6 +2213,7 @@
                                     >
                                 </div>
                                 <div
+                                    class="mob-1col"
                                     style="
                                         display: grid;
                                         grid-template-columns: repeat(3, 1fr);
@@ -2332,6 +2354,7 @@
                             "
                         >
                             <div
+                                class="mob-1col"
                                 style="
                                     display: grid;
                                     grid-template-columns: 1fr 1fr;
@@ -2598,6 +2621,7 @@
 
                         <!-- story -->
                         <div
+                            class="mob-1col"
                             style="
                                 max-width: 1180px;
                                 margin: 0 auto;
@@ -3635,6 +3659,7 @@
                         </div>
 
                         <div
+                            class="mob-1col"
                             style="
                                 max-width: 1180px;
                                 margin: 0 auto;
@@ -3860,6 +3885,7 @@
                                     Um ritmo simples, do começo ao fim.
                                 </h2>
                                 <div
+                                    class="mob-2col"
                                     style="
                                         display: grid;
                                         grid-template-columns: repeat(4, 1fr);
@@ -4216,6 +4242,7 @@
                         </div>
 
                         <div
+                            class="mob-1col"
                             style="
                                 max-width: 1180px;
                                 margin: 0 auto;
@@ -4786,6 +4813,7 @@
                                         </p>
 
                                         <div
+                                            class="mob-1col"
                                             style="
                                                 display: grid;
                                                 grid-template-columns: repeat(
@@ -5789,6 +5817,7 @@
 
                                 <!-- Para refletir + Para viver -->
                                 <div
+                                    class="mob-1col"
                                     style="
                                         max-width: 860px;
                                         margin: 0 auto;
@@ -6081,6 +6110,7 @@
                         "
                     >
                         <div
+                            class="mob-1col"
                             style="
                                 display: grid;
                                 grid-template-columns: 1.4fr 1fr 1fr;
